@@ -230,6 +230,8 @@
 		53D95271253BD9CB00006D41 /* taglib_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D95270253BD9B000006D41 /* taglib_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53D95279253BDAC800006D41 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D95277253BDAC800006D41 /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53D9527A253BDAC800006D41 /* checked.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D95278253BDAC800006D41 /* checked.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53D952C3253BEC6500006D41 /* tlist.tcc in Headers */ = {isa = PBXBuildFile; fileRef = 53D952BD253BEC4300006D41 /* tlist.tcc */; settings = {ATTRIBUTES = (Public, ); }; };
+		53D952C5253BEC6700006D41 /* tmap.tcc in Headers */ = {isa = PBXBuildFile; fileRef = 53D952BC253BEC4300006D41 /* tmap.tcc */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -458,6 +460,8 @@
 		53D95270253BD9B000006D41 /* taglib_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = taglib_config.h; sourceTree = "<group>"; };
 		53D95277253BDAC800006D41 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
 		53D95278253BDAC800006D41 /* checked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checked.h; sourceTree = "<group>"; };
+		53D952BC253BEC4300006D41 /* tmap.tcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmap.tcc; sourceTree = "<group>"; };
+		53D952BD253BEC4300006D41 /* tlist.tcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tlist.tcc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -898,6 +902,8 @@
 				53D95180253BD81400006D41 /* tbytevectorlist.cpp */,
 				53D95181253BD81400006D41 /* tzlib.h */,
 				53D95182253BD81400006D41 /* tzlib.cpp */,
+				53D952BD253BEC4300006D41 /* tlist.tcc */,
+				53D952BC253BEC4300006D41 /* tmap.tcc */,
 			);
 			path = toolkit;
 			sourceTree = "<group>";
@@ -943,6 +949,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D952C5253BEC6700006D41 /* tmap.tcc in Headers */,
+				53D952C3253BEC6500006D41 /* tlist.tcc in Headers */,
 				53D95271253BD9CB00006D41 /* taglib_config.h in Headers */,
 				53D95234253BD81400006D41 /* asftag.h in Headers */,
 				53D9524B253BD81400006D41 /* tdebug.h in Headers */,
@@ -1386,6 +1394,7 @@
 					"-Wno-shorten-64-to-32",
 					"-Wno-delete-abstract-non-virtual-dtor",
 					"-Wno-unreachable-code-loop-increment",
+					"-Wno-quoted-include-in-framework-header",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.einsteinx2.TagLibXcode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1420,6 +1429,7 @@
 					"-Wno-shorten-64-to-32",
 					"-Wno-delete-abstract-non-virtual-dtor",
 					"-Wno-unreachable-code-loop-increment",
+					"-Wno-quoted-include-in-framework-header",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.einsteinx2.TagLibXcode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
