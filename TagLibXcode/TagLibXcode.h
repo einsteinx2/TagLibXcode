@@ -16,3 +16,6 @@ FOUNDATION_EXPORT const unsigned char TagLibXcodeVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <TagLibXcode/PublicHeader.h>
 
 
+#import <TagLibXcode/fileref.h>
+#import <TagLibXcode/tag.h>
+#import <TagLibXcode/tpropertymap.h>
