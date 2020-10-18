@@ -1380,6 +1380,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"-Wno-documentation",
+					"-Wno-documentation-deprecated-sync",
+					"-Wno-shorten-64-to-32",
+					"-Wno-delete-abstract-non-virtual-dtor",
+					"-Wno-unreachable-code-loop-increment",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.einsteinx2.TagLibXcode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1406,6 +1413,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"-Wno-documentation",
+					"-Wno-documentation-deprecated-sync",
+					"-Wno-shorten-64-to-32",
+					"-Wno-delete-abstract-non-virtual-dtor",
+					"-Wno-unreachable-code-loop-increment",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.einsteinx2.TagLibXcode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
