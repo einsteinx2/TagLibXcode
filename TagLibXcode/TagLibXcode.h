@@ -20,13 +20,13 @@ FOUNDATION_EXPORT const unsigned char TagLibXcodeVersionString[];
 #pragma clang diagnostic ignored "-Wdocumentation"
 #pragma clang diagnostic ignored "-Wdocumentation-deprecated-sync"
 
-/* File Tags */
+/* Generic File Tags */
 
 #import <TagLibXcode/fileref.h>
 #import <TagLibXcode/tag.h>
 #import <TagLibXcode/tpropertymap.h>
 
-/* Cover Art */
+/* Custom Tags and Cover Art */
 
 // MP3
 #import <TagLibXcode/mpegfile.h>
@@ -42,5 +42,7 @@ FOUNDATION_EXPORT const unsigned char TagLibXcodeVersionString[];
 #import <TagLibXcode/aifffile.h>
 // OPUS
 #import <TagLibXcode/opusfile.h>
+// WAV
+#import <TagLibXcode/wavfile.h>
 
 #pragma clang diagnostic pop
